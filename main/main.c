@@ -18,10 +18,11 @@ void app_main(void)
     ESP_ERROR_CHECK(camera_init_vga());   // VGA
     // ESP_ERROR_CHECK(camera_init_qvga()); // QVGA
     ESP_LOGI(TAG, "Initializing camera...");
-
+    //ESP_ERROR_CHECK(camera_init_svga());
 
     ESP_LOGI(TAG, "Starting Wi-Fi...");
-    ESP_ERROR_CHECK(wifi_init_sta("SpectrumSetup-41", "leastdinner914"));
+    /*ESP_ERROR_CHECK(wifi_init_sta("SpectrumSetup-41", "leastdinner914"));*/
+    ESP_ERROR_CHECK(wifi_init_sta("NETGEAR48-2.4-LOFT", "waterypanda901"));
 
     ESP_LOGI(TAG, "Starting HTTP stream...");
     ESP_ERROR_CHECK(http_stream_start());

@@ -117,6 +117,12 @@ esp_err_t camera_init_qvga(void)
 }
 
 
+esp_err_t camera_init_svga(void)
+{
+    // if use SVGA probably needs lower quality (higher number)
+    return camera_init_common(FRAMESIZE_SVGA, 16);
+}
+
 
 
 

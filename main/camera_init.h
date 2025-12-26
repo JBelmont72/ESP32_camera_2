@@ -16,7 +16,8 @@ extern "C" {
  * @brief Initialize camera in VGA (640x480) JPEG mode
  */
 esp_err_t camera_init_vga(void);
-
+// uncomment to select the svga mode desired
+//esp_err_t camera_init_svga(void);
 /**
  * @brief Deinitialize camera (optional but recommended when switching modes)
  */
